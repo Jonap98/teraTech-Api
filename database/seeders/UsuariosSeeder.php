@@ -32,6 +32,22 @@ class UsuariosSeeder extends Seeder
             'correo' => 'marijose@gmail.com',
             'password' => Hash::make('password'),
         ]);
+
+        DB::table('users')->insert([
+            'id_rol' => 1,
+            'name' => 'Medaly',
+            'last_name' => 'Guerrero',
+            'email' => 'medaly@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
+        DB::table('users')->insert([
+            'id_rol' => 2,
+            'name' => 'Marijose',
+            'last_name' => 'Gaona',
+            'email' => 'marijose@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
         
     }
 }
